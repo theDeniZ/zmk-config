@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2022  The ZMK Contributors
+ * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
  */
@@ -7,7 +7,6 @@
 #include <dt-bindings/led/led.h>
 
 &spi1 {
-    pinctrl-0 = <&usart1_tx_pa9 &usart1_rx_pa10>;
 	compatible = "nordic,nrf-spim";
 	status = "okay";
 	mosi-pin = <6>;
@@ -17,14 +16,14 @@
 
 	led_strip: ws2812@0 {
 		compatible = "worldsemi,ws2812-spi";
-		label = "SK6812";
+		label = "WS2812";
 
 		/* SPI */
 		reg = <0>; /* ignored, but necessary for SPI bindings */
 		spi-max-frequency = <4000000>;
 
-		/* SK6812 RGBW */
-		chain-length = <4>;
+		/* WS2812 */
+		chain-length = <5>; /* number of LEDs */
 		spi-one-frame = <0x70>;
 		spi-zero-frame = <0x40>;
 		color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
