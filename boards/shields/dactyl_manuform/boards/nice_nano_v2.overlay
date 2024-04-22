@@ -2,6 +2,9 @@
 
 &spi1 {
 	compatible = "nordic,nrf-spim";
+	pinctrl-0 = <&spi1_default>;
+    pinctrl-1 = <&spi1_sleep>;
+    pinctrl-names = "default", "sleep";
 	/* Cannot be used together with i2c0. */
 	status = "okay";
 	mosi-pin = <6>;
