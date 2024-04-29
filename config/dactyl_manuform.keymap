@@ -90,7 +90,7 @@
 &none  &none  &none           &none    &none         &none              &none            &none         &none      &none           &none  &none
 &none  &none  &none           &kp Q    &kp W         &kp E              &kp Q            &kp UP        &kp E      &none           &none  &none
 &none  &none  &kp B           &kp A    &kp S         &kp D              &kp LEFT         &kp DOWN      &kp RIGHT  &kp B           &none  &none
-&kp R  &kp G  &kp LEFT_SHIFT  &kp C    &kp V         &kp BACKSPACE      &kp RETURN       &kp M         &kp H      &kp LEFT_SHIFT  &kp L  &kp R
+&kp R  &kp G  &kp LEFT_SHIFT  &kp C    &kp V         &kp RET            &kp RETURN       &kp M         &kp H      &kp LEFT_SHIFT  &kp L  &kp R
               &kp J           &kp TAB  &kp ESC       &kp SPACE          &kp SPACE        &kp ESC       &kp TAB    &none
             >;
         };
